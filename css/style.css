@@ -141,6 +141,7 @@ h2,
 .heading-2 {
 	font-size: 36px;
 	line-height: 1.66667;
+	/* color: #e88910; */
 }
 
 @media (min-width: 992px) {
@@ -629,6 +630,7 @@ a[href*='tel'], a[href*='mailto'] {
 	transform-origin: 50% 80%;
 	transition: all .3s ease;
 	z-index: -1;
+	border-color: transparent transparent #fcefc9 transparent;
 }
 
 .box-icon-modern-title a, .box-icon-modern-title a:focus, .box-icon-modern-title a:active {
@@ -657,7 +659,7 @@ a[href*='tel'], a[href*='mailto'] {
 	height: 100%;
 	left: 15px;
 	right: 15px;
-	background: #2e52849c;
+	background: #fcefc9;
 	transition: all .3s ease;
 }
 
@@ -692,6 +694,8 @@ a[href*='tel'], a[href*='mailto'] {
 @media (min-width: 992px) {
 	.desktop .box-icon-modern:hover {
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+		box-shadow: 0 0 10px 0 #fcefc9;
+		border: 1px solid #fcefc9;
 	}
 	.desktop .box-icon-modern:hover .box-icon-modern-icon:after {
 		transform: translate3d(-50%, 0, 0) rotate(0deg);
@@ -1069,11 +1073,11 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 
-.box-contacts-decor {
+.box-contacts-decor{
 	margin: 30px auto;
 	height: 2px;
 	max-width: 100px;
-	background: #e88910;
+	background:#2e5284;
 	transition: all .3s ease-in-out;
 }
 
@@ -1099,6 +1103,8 @@ a[href*='tel'], a[href*='mailto'] {
 	.desktop .box-contacts {
 		box-shadow: none;
 		border: 1px solid #e1e1e1;
+		border: 1px solid #fcefc9;
+		/* background: #eac14814; */
 	}
 	.desktop .box-contacts-decor {
 		margin-top: 17px;
@@ -1108,6 +1114,8 @@ a[href*='tel'], a[href*='mailto'] {
 	.desktop .box-contacts:hover {
 		border-color: transparent;
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+		border-color: #fcefc9;
+    	box-shadow: 0 0 10px 0 #fcefc9;
 	}
 	.desktop .box-contacts:hover .box-contacts-decor {
 		margin-top: 30px;
@@ -1115,6 +1123,12 @@ a[href*='tel'], a[href*='mailto'] {
 		width: 100%;
 		transition: margin .3s ease, width .4s ease-in-out;
 	}
+	.box-contacts-decor{
+		background: #e88910;
+	} 
+	.box-contacts-decor:hover{
+		background: #e88910;
+	} 
 }
 
 .box-contacts-icon + .box-contacts-link {
@@ -2443,6 +2457,7 @@ hr {
 	height: 100%;
 	width: 4px;
 	background: #d7d7d7;
+	background: #fcefc9;
 }
 
 .title-decoration-lines-bottom {
@@ -11581,6 +11596,7 @@ html [class*='section-'].section-top-0 {
 */
 .bg-default {
 	background-color: #ffffff;
+	/* background-color: #96989b; */
 }
 
 .bg-gray-100 {
@@ -16802,6 +16818,7 @@ h1 + .tabs-line {
 	letter-spacing: .075em;
 	text-align: center;
 	vertical-align: middle;
+	color: #f2d789;
 }
 
 .tabs-line .nav-link-big {
@@ -16965,6 +16982,7 @@ h1 + .tabs-line {
 	.tabs-horizontal.tabs-line .nav-tabs {
 		justify-content: space-between;
 		border-bottom: 3px solid #e1e1e1;
+		border-bottom: 3px solid #f2d789;
 	}
 	.tabs-horizontal.tabs-line .nav-item {
 		display: inline-block;
@@ -17660,6 +17678,7 @@ h1 + .tabs-line {
 .border-2-column > div {
 	padding: 0;
 	border-top: 1px solid #e1e1e1;
+	border-top: 2px solid #fcefc9;
 }
 
 .border-2-column > div:nth-child(1) {
@@ -17686,6 +17705,8 @@ h1 + .tabs-line {
 	}
 	.border-2-column > div:nth-child(even) {
 		border-left: 1px solid #e1e1e1;
+		border-left: 2px solid #fcefc9;
+
 	}
 	.border-2-column > div:nth-child(even) .counter-amy {
 		padding-right: 0;
