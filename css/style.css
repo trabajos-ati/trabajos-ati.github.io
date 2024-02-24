@@ -9921,6 +9921,49 @@ h2.title-modern > span {
 
 /*
 *
+* Galery
+*/
+
+#galery{
+	background: #7768ce;
+	color: white;	
+}
+#galery h2{
+	color: white;	
+}
+
+
+#galery .carousel-indicators{
+	bottom: -50px;
+}
+#galery .carousel-inner .row{
+	justify-content: space-between;
+  	padding: 0 8%;
+}
+
+#galery .carousel-inner .col-sm-4{
+	display: flex;
+	flex: 0 0 90%;
+  	text-align: center;
+	padding: 0px;
+}
+#galery .carousel-inner .col-sm-4 img{
+	margin: 5px 8px;
+}
+#galery .carousel-control-prev{
+	width: 5%;
+}
+#galery .carousel-control-next{
+	width: 5%;
+}
+
+
+
+
+
+
+/*
+*
 * Team
 */
 .team-classic {
