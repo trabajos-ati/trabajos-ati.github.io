@@ -113,10 +113,12 @@ h1, h2, h3, h4, h5, h6, [class*='heading-'] {
 	text-transform: capitalize;
 	letter-spacing: .024em;
 	word-spacing: .05em;
+	
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, [class*='heading-'] a {
 	color: inherit;
+	
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, [class*='heading-'] a:hover {
@@ -142,12 +144,16 @@ h2,
 	font-size: 36px;
 	line-height: 1.66667;
 	/* color: #e88910; */
+	color: #eeb612;
+  	font-family: Verdana;
 }
 
 @media (min-width: 992px) {
 	h2,
 	.heading-2 {
 		font-size: 42px;
+		color: #eeb612;
+  		font-family: Verdana;
 	}
 }
 
@@ -695,7 +701,7 @@ a[href*='tel'], a[href*='mailto'] {
 	.desktop .box-icon-modern:hover {
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
 		box-shadow: 0 0 10px 0 #fcefc9;
-		border: 1px solid #fcefc9;
+		/* border: 1px solid #fcefc9; */
 	}
 	.desktop .box-icon-modern:hover .box-icon-modern-icon:after {
 		transform: translate3d(-50%, 0, 0) rotate(0deg);
@@ -14715,9 +14721,10 @@ html.rd-navbar-fixed-linked .page-header {
 
 @media (min-width: 1200px) {
 	.rd-navbar-classic.rd-navbar-static .rd-navbar-main {
-		padding-top: 24px;
+		padding-top: 0px;
 		padding-right: 68px;
-		padding-bottom: 20px;
+		padding-bottom: 0px;
+		padding-left: 68px;
 	}
 	.rd-navbar-classic.rd-navbar-static .rd-navbar-main.active {
 		padding-right: 150px;
@@ -14770,6 +14777,7 @@ html.rd-navbar-fixed-linked .page-header {
 	height: auto;
 	max-width: 180px;
 	max-height: 180px;
+	max-width: 300px;
 }
 
 @media (min-width: 1400px) {
@@ -14783,6 +14791,8 @@ html.rd-navbar-fixed-linked .page-header {
 	display: flex;
 	align-items: center;
 	margin-bottom: 5px;
+	padding-top: 24px;
+  	padding-bottom: 20px;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-submenu.focus .rd-navbar-megamenu, .rd-navbar-classic.rd-navbar-static .rd-navbar-submenu.opened .rd-navbar-megamenu {
@@ -14829,8 +14839,8 @@ html.rd-navbar-fixed-linked .page-header {
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-main, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone .rd-navbar-main {
-	padding-top: 11px;
-	padding-bottom: 11px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-classic-project, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone .rd-navbar-classic-project {
@@ -15458,6 +15468,12 @@ html.rd-navbar-fixed-linked .page-header {
 	white-space: nowrap;
 	background-position: 50% 50%;
 }
+.swiper-panel {
+	width: 100%; 
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	position: absolute;
+}
 
 .swiper-slide-caption {
 	width: 100%;
@@ -15545,10 +15561,12 @@ html.rd-navbar-fixed-linked .page-header {
 
 .swiper-slider-classic h1 {
 	letter-spacing: .02em;
+	color: white;
 }
 
 .swiper-slider-classic * + p {
 	margin-top: 14px;
+	color: white;
 }
 
 .swiper-slider-classic * + .button {
